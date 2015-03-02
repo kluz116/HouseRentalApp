@@ -1,0 +1,48 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+}
+
+#pane1{
+    -fx-border-color: brown;
+    -fx-border-style:  solid;
+    -fx-border-width: 3px;
+    -fx-border-radius: 5px ;
+    -fx-effect:  dropshadow(three-pass-box,rgba(0,0,0,0.7),1,2,1,1);
+}
+#pane2{
+    -fx-border-color: brown;
+    -fx-border-radius: 5px ;
+    -fx-border-style:  solid;
+    -fx-border-width: 3px;
+    -fx-effect:  dropshadow(three-pass-box,rgba(0,0,0,0.7),1,2,1,1);
+}
+#pane3{
+    -fx-border-color: brown;
+    -fx-border-radius: 5px ;
+    -fx-border-style:  solid;
+    -fx-border-width: 3px;
+    box-shadow: 0px 5px 5px gray;
+    margin-left: 10px;
+    margin-top: 60px;
+}
+#pane4{
+    -fx-border-color: brown;
+    -fx-border-radius: 5px ;
+    -fx-border-style:  solid;
+    -fx-border-width: 3px;
+    -fx-effect:  dropshadow(three-pass-box,rgba(0,0,0,0.7),1,2,1,1);
+}
+#pane5{
+    -fx-border-color: brown;
+    -fx-border-radius: 5px ;
+    -fx-border-style:  solid;
+    -fx-border-width: 3px;
+    -fx-effect:  dropshadow(three-pass-box,rgba(0,0,0,0.7),1,2,1,1);
+}
+#fname{
+}
+

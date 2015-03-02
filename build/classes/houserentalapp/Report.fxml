@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="402.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="houserentalapp.ReportController">
+   <children>
+      <BorderPane layoutX="2.0" prefHeight="402.0" prefWidth="600.0">
+         <top>
+            <Text fill="#d32d2d" strokeType="OUTSIDE" strokeWidth="0.0" text="View All Rental Reports" textAlignment="CENTER" wrappingWidth="400.13671875" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="25.0" />
+               </font>
+            </Text>
+         </top>
+         <center>
+            <TableView fx:id="table1" prefHeight="263.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="housenumber" prefWidth="105.0" resizable="false" text="HOUSE NUMBER" />
+                  <TableColumn fx:id="amountpaid" prefWidth="96.0" resizable="false" text="AMOUNT PAID" />
+                  <TableColumn fx:id="expectedamount" prefWidth="122.0" resizable="false" text="EXPECTED AMOUNT" />
+                  <TableColumn fx:id="balance" prefWidth="110.0" resizable="false" text="BALANCE" />
+                  <TableColumn fx:id="datein" minWidth="4.0" prefWidth="90.0" resizable="false" text="DATE IN" />
+                  <TableColumn fx:id="dateout" minWidth="0.0" prefWidth="74.0" resizable="false" text="DATE OUT" />
+               </columns></TableView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
