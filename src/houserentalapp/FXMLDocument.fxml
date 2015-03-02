@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="679.0" prefWidth="1416.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="houserentalapp.FXMLDocumentController">
+   <children>
+      <BorderPane prefHeight="679.0" prefWidth="1545.0">
+         <top>
+            <MenuBar prefHeight="25.0" prefWidth="1311.0" BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <left>
+            <Pane fx:id="pane3" prefHeight="464.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="firstname" layoutX="24.0" layoutY="127.0" prefHeight="33.0" prefWidth="262.0" promptText="First Name" />
+                  <TextField fx:id="middlename" layoutX="24.0" layoutY="191.0" prefHeight="35.0" prefWidth="261.0" promptText="Middle Name" />
+                  <TextField fx:id="lastname" layoutX="24.0" layoutY="259.0" prefHeight="34.0" prefWidth="260.0" promptText="Last Name Or Surname" />
+                  <ComboBox fx:id="housenumber" layoutX="24.0" layoutY="327.0" prefHeight="25.0" prefWidth="119.0" promptText="House Number" />
+                  <DatePicker fx:id="date" layoutX="28.0" layoutY="517.0" prefHeight="29.0" prefWidth="111.0" promptText="Date In" />
+                  <Text fx:id="results" fill="#eb0c0c" fontSmoothingType="LCD" layoutX="34.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="239.13671875">
+                     <font>
+                        <Font name="Times New Roman Bold" size="17.0" />
+                     </font></Text>
+                  <ComboBox fx:id="housetype" layoutX="161.0" layoutY="327.0" prefHeight="25.0" prefWidth="118.0" promptText="House Type" />
+                  <TextField fx:id="amountpaid" layoutX="28.0" layoutY="451.0" prefHeight="29.0" prefWidth="251.0" promptText="Amount Paid (UGX)" />
+                  <ComboBox fx:id="amountpermonth" layoutX="24.0" layoutY="384.0" prefHeight="25.0" prefWidth="145.0" promptText="Amount Per Month(UGX)" />
+                  <ComboBox fx:id="month" layoutX="203.0" layoutY="384.0" prefHeight="25.0" prefWidth="78.0" promptText="Month" />
+                  <DatePicker fx:id="date1" layoutX="147.0" layoutY="515.0" prefHeight="31.0" prefWidth="131.0" promptText="Date Out" />
+               </children></Pane>
+         </left>
+         <center>
+            <Pane fx:id="pane4" prefHeight="500.0" prefWidth="516.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="32.0" layoutY="191.0" mnemonicParsing="false" onAction="#onSave" prefHeight="25.0" prefWidth="171.0" text="Save Records">
+                     <font>
+                        <Font name="Times New Roman Bold" size="12.0" />
+                     </font></Button>
+                  <Button layoutX="35.0" layoutY="258.0" mnemonicParsing="false" onAction="#onUpdate" prefHeight="25.0" prefWidth="170.0" text="Update Records">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button layoutX="30.0" layoutY="487.0" mnemonicParsing="false" onAction="#onSignOut" prefHeight="25.0" prefWidth="176.0" text="Sign Out" textAlignment="CENTER" />
+                  <TextField fx:id="search" layoutX="32.0" layoutY="84.0" onKeyReleased="#onSearch" prefHeight="25.0" prefWidth="180.0" promptText="Please Search Here Client.." />
+                  <Button layoutX="34.0" layoutY="327.0" mnemonicParsing="false" onAction="#onDelete" prefHeight="25.0" prefWidth="173.0" text="Delete Records" />
+                  <Button layoutX="36.0" layoutY="405.0" mnemonicParsing="false" onAction="#onReport" prefHeight="25.0" prefWidth="173.0" text="View Report" />
+               </children>
+            </Pane>
+         </center>
+         <right>
+            <Pane fx:id="pane5" prefHeight="653.0" prefWidth="990.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="table" layoutX="16.0" layoutY="15.0" prefHeight="625.0" prefWidth="875.0">
+                     <columns>
+                        <TableColumn fx:id="fname" prefWidth="70.0" text="Firstname" />
+                        <TableColumn fx:id="mname" text="Middlename" />
+                        <TableColumn fx:id="lname" prefWidth="67.0" text="Lastname" />
+                        <TableColumn fx:id="hnumber" prefWidth="51.0" text="HNo." />
+                        <TableColumn fx:id="htype" prefWidth="69.0" text="HseType" />
+                        <TableColumn fx:id="apermonth" prefWidth="95.0" text="Amount(P/W)" />
+                        <TableColumn fx:id="apaid" prefWidth="56.0" text="Month" />
+                        <TableColumn fx:id="expectedamount" prefWidth="63.0" text="Paid" />
+                        <TableColumn fx:id="balance" prefWidth="81.0" text="Amount Ex" />
+                        <TableColumn fx:id="datein" prefWidth="79.0" text="Banlance" />
+                        <TableColumn fx:id="dateout" prefWidth="96.0" text="Date In" />
+                        <TableColumn fx:id="monthhh" prefWidth="72.0" text="Date Out" />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </right></BorderPane>
+   </children>
+</AnchorPane>

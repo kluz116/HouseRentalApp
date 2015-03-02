@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="656.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="houserentalapp.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <Pane fx:id="pane1" layoutX="14.0" layoutY="32.0" prefHeight="336.0" prefWidth="288.0">
+         <children>
+            <ImageView fitHeight="213.0" fitWidth="278.0" layoutX="5.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@log.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="pane2" layoutX="323.0" layoutY="32.0" prefHeight="336.0" prefWidth="305.0">
+         <children>
+            <TextField fx:id="username" layoutX="38.0" layoutY="99.0" prefHeight="35.0" prefWidth="246.0" promptText="Username" />
+            <PasswordField fx:id="password" layoutX="38.0" layoutY="167.0" prefHeight="35.0" prefWidth="246.0" promptText="Password" />
+            <Button layoutX="127.0" layoutY="250.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="25.0" prefWidth="78.0" text="Sign In" textAlignment="CENTER">
+               <font>
+                  <Font name="LeagueGothic-Regular" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="45.0" prefHeight="17.0" prefWidth="246.0" textAlignment="CENTER" />
+         </children>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
